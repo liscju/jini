@@ -1,0 +1,7 @@
+#!/bin/bash
+
+JINI_DIR=`dirname $0`
+JINI_JAR="${project.artifactId}-${project.version}.jar"
+JINI_PATH="$JINI_DIR/$JINI_JAR"
+
+java -jar "$JINI_PATH" "$@"
